@@ -1,0 +1,7 @@
+customer_id,name,email,date_joined,total_spend
+1001, john smith , JOHN@MAIL.COM ,01/02/2024,£100
+1002,jane doe,jane@mail.com,02-02-2024,£200
+1003,BOB JOHNSON,bob@mail.com,2024-02-03,150
+,,,,
+1002,Jane Doe,JANE@MAIL.COM,02/02/24,£200
+1004,alice brown,alice@mail.com,04/02/2024,£150
