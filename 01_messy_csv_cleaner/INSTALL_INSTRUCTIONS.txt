@@ -1,0 +1,6 @@
+Merge this 01_messy_csv_cleaner folder into the existing project folder.
+
+Then run:
+
+cd 01_messy_csv_cleaner
+python3 -m unittest discover -s tests -v
