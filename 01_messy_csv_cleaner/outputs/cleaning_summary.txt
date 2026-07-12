@@ -1,0 +1,5 @@
+CSV Cleaning Summary
+Input rows: 6
+Clean rows: 4
+Blank rows removed: 1
+Duplicate rows removed: 1
