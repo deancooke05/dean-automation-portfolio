@@ -77,6 +77,31 @@ The current version:
     ├── clean_customers.csv
     └── cleaning_summary.txt
 ```
+---
+
+## Screenshots
+
+### Original Data
+
+The example CSV contains deliberately inconsistent formatting, duplicate records and blank rows.
+
+<img src="screenshots/01_before.png" width="900">
+
+---
+
+### Cleaned Output
+
+After processing, duplicate records are removed, names and email addresses are normalised, dates are converted to ISO format and blank rows are removed.
+
+<img src="screenshots/02_after.png" width="900">
+
+---
+
+### Automated Tests
+
+Every core cleaning function is covered by automated unit tests.
+
+<img src="screenshots/03_tests.png" width="900">
 
 ---
 
