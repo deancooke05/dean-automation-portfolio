@@ -1,0 +1,22 @@
+[
+  {
+    "sku": "CAL-01",
+    "stock": "12",
+    "daily_demand": "4",
+    "lead_days": "5",
+    "safety_stock": "5",
+    "reorder_point": 25.0,
+    "recommended_order": 13.0,
+    "status": "REORDER"
+  },
+  {
+    "sku": "CAL-02",
+    "stock": "80",
+    "daily_demand": "3",
+    "lead_days": "7",
+    "safety_stock": "10",
+    "reorder_point": 31.0,
+    "recommended_order": 0.0,
+    "status": "OK"
+  }
+]

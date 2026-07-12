@@ -1,0 +1,7 @@
+[
+  {
+    "source": "/Users/deancooke/Desktop/Work/dean_automation_portfolio/04_invoice_renamer/sample_data/files/invoice1.pdf",
+    "destination": "/Users/deancooke/Desktop/Work/dean_automation_portfolio/04_invoice_renamer/sample_data/files/2026-07-01_Example_Supplies_INV_1001.pdf",
+    "exists": true
+  }
+]

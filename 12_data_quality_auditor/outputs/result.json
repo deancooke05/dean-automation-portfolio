@@ -1,0 +1,15 @@
+{
+  "rows": 3,
+  "columns": 3,
+  "fields": [
+    "id",
+    "name",
+    "email"
+  ],
+  "missing": {
+    "id": 0,
+    "name": 2,
+    "email": 0
+  },
+  "duplicate_rows": 1
+}

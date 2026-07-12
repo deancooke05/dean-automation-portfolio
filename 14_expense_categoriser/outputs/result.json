@@ -1,0 +1,27 @@
+{
+  "totals": {
+    "Software": 15.0,
+    "Travel": 42.5,
+    "Office": 18.2
+  },
+  "transactions": [
+    {
+      "date": "2026-07-01",
+      "description": "GitHub subscription",
+      "amount": "15",
+      "category": "Software"
+    },
+    {
+      "date": "2026-07-02",
+      "description": "National Rail",
+      "amount": "42.50",
+      "category": "Travel"
+    },
+    {
+      "date": "2026-07-03",
+      "description": "Stationery supplies",
+      "amount": "18.20",
+      "category": "Office"
+    }
+  ]
+}

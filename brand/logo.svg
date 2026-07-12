@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-label="Cooke Automation Systems">
+  <rect width="1200" height="260" rx="24" fill="#142B3A"/>
+  <path d="M105 70h72l36 60-36 60h-72l-36-60z" fill="none" stroke="#B79A62" stroke-width="8"/>
+  <path d="M116 105h50l15 25-15 25h-50l-15-25z" fill="#B79A62"/>
+  <text x="260" y="120" font-family="Aptos, Helvetica, Arial, sans-serif" font-size="52" font-weight="700" fill="#FFFFFF">COOKE AUTOMATION SYSTEMS</text>
+  <text x="263" y="170" font-family="Aptos, Helvetica, Arial, sans-serif" font-size="23" letter-spacing="4" fill="#BFCBD2">ENGINEERING FIRST. DESIGN ALWAYS.</text>
+</svg>

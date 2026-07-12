@@ -1,0 +1,22 @@
+{
+  "lines": 3,
+  "severities": {
+    "INFO": 1,
+    "ERROR": 1,
+    "WARNINGING": 1
+  },
+  "top_messages": [
+    [
+      "Started",
+      1
+    ],
+    [
+      "Connection failed",
+      1
+    ],
+    [
+      "Retrying",
+      1
+    ]
+  ]
+}

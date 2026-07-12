@@ -1,0 +1,26 @@
+[
+  {
+    "client": "Aero North",
+    "budget": "2500",
+    "urgency": "high",
+    "fit": "strong",
+    "score": 100,
+    "priority": "High"
+  },
+  {
+    "client": "Maker Works",
+    "budget": "1200",
+    "urgency": "medium",
+    "fit": "excellent",
+    "score": 70,
+    "priority": "High"
+  },
+  {
+    "client": "Local Shop",
+    "budget": "400",
+    "urgency": "low",
+    "fit": "medium",
+    "score": 0,
+    "priority": "Low"
+  }
+]

@@ -1,5 +1,7 @@
 # Messy CSV Cleaner
 
+![Cooke Automation Systems](../brand/logo.svg)
+
 A simple Python tool that turns inconsistent CSV data into a cleaner, more usable file.
 
 ## The Problem

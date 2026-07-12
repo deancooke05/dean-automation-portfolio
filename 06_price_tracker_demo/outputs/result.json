@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "product": "Telemetry Unit",
+      "first_price": 499.0,
+      "latest_price": 449.0,
+      "change_percent": -10.02,
+      "lowest_price": 449.0
+    },
+    {
+      "product": "Control Board",
+      "first_price": 250.0,
+      "latest_price": 265.0,
+      "change_percent": 6.0,
+      "lowest_price": 250.0
+    }
+  ],
+  "observations": 4
+}

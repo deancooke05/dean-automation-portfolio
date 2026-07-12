@@ -1,0 +1,4 @@
+ticket,resolution_hours,sla_met
+T-001,2.5,yes
+T-002,9,no
+T-003,4,yes

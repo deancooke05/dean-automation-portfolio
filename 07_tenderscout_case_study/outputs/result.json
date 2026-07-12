@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Engineering dashboard",
+    "description": "Software dashboard for engineering team",
+    "value": "9000",
+    "matched_keywords": "engineering, software",
+    "score": 60
+  },
+  {
+    "title": "Automation support",
+    "description": "Python automation for reporting",
+    "value": "5000",
+    "matched_keywords": "automation",
+    "score": 40
+  },
+  {
+    "title": "Office cleaning",
+    "description": "Weekly facilities contract",
+    "value": "12000",
+    "matched_keywords": "",
+    "score": 20
+  }
+]

@@ -1,0 +1,3 @@
+sku,stock,daily_demand,lead_days,safety_stock
+CAL-01,12,4,5,5
+CAL-02,80,3,7,10

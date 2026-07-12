@@ -1,84 +1,58 @@
-# Dean Cooke — Python Automation Portfolio
+# Cooke Automation Systems
 
-Practical Python tools built to save time, organise data, and simplify repetitive work.
+![Cooke Automation Systems](brand/logo.svg)
 
-I am a UK-based Aerospace Engineering student and Python developer focused on building useful automation for spreadsheets, files, reports, monitoring, and everyday business workflows.
+Twenty practical automation products designed to remove repetitive work, improve data quality and make everyday business processes easier to manage.
 
-## What this portfolio demonstrates
+This catalogue is developed independently by Dean Cooke alongside an MEng Aerospace Engineering with Pilot Studies degree at UWE Bristol. Every product is built around clear scope, safe defaults, local processing, documented examples and verifiable outputs.
 
-- Python automation
-- Excel and CSV processing
-- Data cleaning and organisation
-- File and folder automation
-- Report generation
-- Monitoring and alert workflows
-- Clear, user-friendly software design
+## Product catalogue
 
-## Featured projects
+| No. | Product | Outcome |
+|---:|---|---|
+| 001 | [Messy CSV Cleaner](01_messy_csv_cleaner) | Turns inconsistent customer data into a reliable CSV export |
+| 002 | [Excel Report Generator](02_excel_report_generator) | Produces a polished executive workbook from raw sales data |
+| 003 | [Smart File Organiser](03_file_organiser) | Plans and applies safe organisation by file type |
+| 004 | [Invoice Renamer](04_invoice_renamer) | Creates consistent, searchable invoice filenames |
+| 005 | [Versioned Backup Tool](05_folder_backup_tool) | Creates verified ZIP backups with integrity manifests |
+| 006 | [Price Tracker Analyser](06_price_tracker_demo) | Explains price movement from offline tracking exports |
+| 007 | [Tender Opportunity Scorer](07_tenderscout_case_study) | Ranks tender opportunities against business criteria |
+| 008 | [Duplicate File Finder](08_duplicate_file_finder) | Finds duplicates using cryptographic content hashes |
+| 009 | [Document Pack Builder](09_document_pack_builder) | Combines documents into a structured review pack |
+| 010 | [Image Library Auditor](10_image_library_auditor) | Produces image renaming and integrity manifests |
+| 011 | [Log Insight Analyser](11_log_insight_analyser) | Summarises severity and repeated application errors |
+| 012 | [Data Quality Auditor](12_data_quality_auditor) | Identifies missing values and duplicate records |
+| 013 | [Quote Builder](13_quote_builder) | Calculates itemised quotes, tax and final totals |
+| 014 | [Expense Categoriser](14_expense_categoriser) | Applies transparent business expense rules |
+| 015 | [Inventory Reorder Planner](15_inventory_reorder_planner) | Calculates reorder points and purchase quantities |
+| 016 | [Schedule Conflict Checker](16_schedule_conflict_checker) | Detects overlapping events before booking problems occur |
+| 017 | [Folder Change Monitor](17_folder_change_monitor) | Creates and compares cryptographic folder snapshots |
+| 018 | [Client Handover Packager](18_client_handover_packager) | Validates and packages delivery folders with checksums |
+| 019 | [Service SLA Dashboard](19_service_sla_dashboard) | Summarises ticket resolution and SLA performance |
+| 020 | [Client Lead Ranker](20_client_lead_ranker) | Prioritises enquiries by fit, urgency and budget |
 
-| Project | Purpose | Status |
-|---|---|---|
-| [Messy CSV Cleaner](01_messy_csv_cleaner) | Cleans duplicates, blanks, names, emails, and dates | Working demo |
-| [Excel Report Generator](02_excel_report_generator) | Converts raw data into a structured Excel report | Working demo |
-| [File Organiser](03_file_organiser) | Sorts mixed files into organised folders | Working demo |
-| [Invoice Renamer](04_invoice_renamer) | Applies consistent names to invoice files | Planned |
-| [Folder Backup Tool](05_folder_backup_tool) | Creates timestamped folder backups | Planned |
-| [Price Tracker Demo](06_price_tracker_demo) | Demonstrates safe price-monitoring logic | Planned |
-| [TenderScout Case Study](07_tenderscout_case_study) | Tender monitoring and filtering workflow | Case study |
+## Design language
 
-## Current focus
+The catalogue uses the Cooke Automation Systems visual identity: deep navy, warm gold, pearl white and restrained steel-grey typography. The aim is quiet confidence rather than decorative complexity.
 
-The first development phase is focused on polishing three client-ready demonstrations:
+## Safety and privacy
 
-1. Messy CSV Cleaner
-2. Excel Report Generator
-3. File Organiser
+- Local-first processing; no customer data is transmitted by the tools.
+- File-changing products preview their actions by default.
+- Example data is synthetic.
+- Outputs are auditable JSON, CSV, ZIP or Excel files.
+- Automated tests cover the shared calculation and validation engine.
 
-Each finished project will include:
+## Verification
 
-- Working Python code
-- Sample input data
-- Example outputs
-- Setup instructions
-- Screenshots
-- A plain-English explanation of the business problem it solves
+From the repository root:
 
-## Services this supports
+```bash
+python3 -m unittest discover -s tests -v
+python3 -m unittest discover -s 01_messy_csv_cleaner/tests -v
+(cd 02_excel_report_generator && python3 -m unittest discover -s tests -v)
+```
 
-- Custom Python automation
-- Excel and CSV cleanup
-- Data-processing tools
-- File organisation
-- Automated reports
-- Reusable workflow scripts
-- Improvements to existing Python programs
+## Freelance services
 
-## Technologies
-
-- Python
-- CSV
-- Pandas
-- OpenPyXL
-- pathlib
-- Git and GitHub
-
-## About me
-
-I am studying Aerospace Engineering with Pilot Studies at UWE Bristol. Alongside my degree, I build practical software, electronics, automation, and engineering projects.
-
-My approach is centred around clear communication, realistic project scopes, careful testing, and creating tools that are genuinely easy to use.
-
-## Repository roadmap
-
-- [x] Create the portfolio structure
-- [x] Add the first three demonstration projects
-- [ ] Run and verify every working demo
-- [ ] Add generated example outputs
-- [ ] Add screenshots and before-and-after examples
-- [ ] Expand the remaining starter projects
-- [ ] Add testing and code-quality checks
-- [ ] Create a portfolio website
-
-## Contact
-
-Available for clearly scoped Python automation, spreadsheet processing, and workflow-tool projects through Fiverr and Upwork.
+The products support clearly scoped Fiverr and Upwork services including Python automation, Excel and CSV processing, reporting, file organisation, operational analysis and reusable workflow tools.
