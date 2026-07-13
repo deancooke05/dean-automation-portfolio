@@ -44,6 +44,6 @@ td{{padding:12px;border-bottom:1px solid var(--line)}}.status{{color:#2f6f55;fon
 <div class='card'><div class='label'>Collisions handled</div><div class='value'>{sum(a.collision for a in plan.actions)}</div></div></section>
 <section class='grid'><div class='panel'><h2>Category summary</h2><table><tr><th>Category</th><th>Files</th></tr>{category_rows}</table></div>
 <div class='panel'><h2>Audit trail</h2><table><tr><th>File</th><th>Category</th><th>Bytes</th><th>Status</th><th>Safety</th></tr>{action_rows}</table></div></section>
-<footer>Generated locally by Cooke Automation Systems • Product 003 v1.0</footer></main></body></html>"""
+<footer>Generated locally by Cooke Automation Systems • Product 003 v1.1</footer></main></body></html>"""
     path.write_text(html, encoding="utf-8")
     return path

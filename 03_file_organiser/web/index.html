@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart File Organiser</title>
+  <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Cooke Automation Systems">
+      <span class="monogram">C</span>
+      <span><b>COOKE</b><small>AUTOMATION SYSTEMS</small></span>
+    </a>
+    <div class="privacy"><span></span> Private & local</div>
+  </header>
+
+  <main>
+    <section id="setupView" class="view active">
+      <div class="intro">
+        <p class="eyebrow">PRODUCT 003 · FILE INTELLIGENCE</p>
+        <h1>Bring order to a<br><em>messy folder.</em></h1>
+        <p class="lead">Choose a folder. Review every proposed change. Organise it only when you are completely happy.</p>
+        <div class="trust-row"><span>Preview first</span><span>No overwrites</span><span>Undo move operations</span></div>
+      </div>
+
+      <form id="setupForm" class="concierge-card">
+        <div class="step-heading"><span>01</span><div><p>Choose your workspace</p><h2>Where are the files?</h2></div></div>
+        <label>Folder to organise
+          <div class="field-row"><input id="source" name="source" autocomplete="off" required><span class="field-actions"><button type="button" class="text-button browse-button" data-target="source">Browse</button><button type="button" class="text-button" id="demoButton">Demo</button></span></div>
+        </label>
+        <label>Organised files will go to
+          <div class="field-row"><input id="destination" name="destination" autocomplete="off" required><span class="field-actions"><button type="button" class="text-button browse-button" data-target="destination">Browse</button></span></div>
+        </label>
+        <div class="option-grid">
+          <label class="choice selected"><input type="radio" name="mode" value="copy" checked><span class="choice-icon">⧉</span><span><b>Copy safely</b><small>Keep every original in place</small></span></label>
+          <label class="choice"><input type="radio" name="mode" value="move"><span class="choice-icon">→</span><span><b>Move files</b><small>Relocate originals with undo support</small></span></label>
+        </div>
+        <label class="toggle-row"><span><b>Include subfolders</b><small>Review files inside nested folders too</small></span><input id="recursive" type="checkbox"><i></i></label>
+        <button class="primary-button" type="submit"><span>Create safe preview</span><b>→</b></button>
+        <p class="assurance">Nothing is changed during preview.</p>
+      </form>
+    </section>
+
+    <section id="previewView" class="view">
+      <div class="page-heading">
+        <button class="back-button" id="backButton">← Change setup</button>
+        <p class="eyebrow">SAFE PREVIEW</p><h1>Your folder, <em>reimagined.</em></h1>
+        <p id="previewPath" class="path-line"></p>
+      </div>
+      <div class="metric-grid">
+        <article><small>FILES REVIEWED</small><strong id="fileCount">0</strong><span>ready to organise</span></article>
+        <article><small>CATEGORIES</small><strong id="categoryCount">0</strong><span>created automatically</span></article>
+        <article><small>DATA VOLUME</small><strong id="dataSize">0 B</strong><span>processed locally</span></article>
+        <article><small>SAFE RENAMES</small><strong id="collisionCount">0</strong><span>overwrites prevented</span></article>
+      </div>
+      <div class="preview-layout">
+        <aside class="category-panel"><div class="panel-title"><span>Destination structure</span><b id="modeBadge">COPY</b></div><div id="categoryList"></div></aside>
+        <section class="action-panel">
+          <div class="panel-title"><span>Every planned action</span><small id="actionCount"></small></div>
+          <div class="table-wrap"><table><thead><tr><th>File</th><th>Category</th><th>Size</th><th>Destination</th></tr></thead><tbody id="actionRows"></tbody></table></div>
+        </section>
+      </div>
+      <div class="approval-bar">
+        <div><span class="shield">✓</span><span><b>Preview complete</b><small id="approvalText">Your originals will remain untouched.</small></span></div>
+        <button id="applyButton" class="primary-button compact"><span>Organise these files</span><b>→</b></button>
+      </div>
+    </section>
+
+    <section id="successView" class="view success-view">
+      <div class="success-mark">✓</div><p class="eyebrow">ORGANISATION COMPLETE</p>
+      <h1>Everything is in<br><em>its right place.</em></h1>
+      <p id="successCopy" class="lead"></p>
+      <div class="success-actions"><a href="/report" target="_blank" class="primary-button compact"><span>Open audit report</span><b>↗</b></a><button id="againButton" class="secondary-button">Organise another folder</button></div>
+      <div class="receipt"><span>LOCAL PROCESSING</span><b id="receiptText"></b></div>
+    </section>
+  </main>
+  <div id="toast" class="toast" role="alert"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
