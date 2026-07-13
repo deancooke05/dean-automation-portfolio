@@ -1,7 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-label="Cooke Automation Systems">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
+  <title id="title">Cooke Automation Systems</title>
+  <desc id="desc">Diamond C mark with the tagline Practical software. Properly engineered.</desc>
   <rect width="1200" height="260" rx="24" fill="#142B3A"/>
-  <path d="M105 70h72l36 60-36 60h-72l-36-60z" fill="none" stroke="#B79A62" stroke-width="8"/>
-  <path d="M116 105h50l15 25-15 25h-50l-15-25z" fill="#B79A62"/>
-  <text x="260" y="120" font-family="Aptos, Helvetica, Arial, sans-serif" font-size="52" font-weight="700" fill="#FFFFFF">COOKE AUTOMATION SYSTEMS</text>
-  <text x="263" y="170" font-family="Aptos, Helvetica, Arial, sans-serif" font-size="23" letter-spacing="4" fill="#BFCBD2">ENGINEERING FIRST. DESIGN ALWAYS.</text>
+  <path d="M130 38 222 130 130 222 38 130Z" fill="none" stroke="#B79A62" stroke-width="7"/>
+  <path d="M164 87A52 52 0 1 0 164 173" fill="none" stroke="#B79A62" stroke-width="11" stroke-linecap="round"/>
+  <text x="275" y="108" font-family="Aptos, Helvetica, Arial, sans-serif" font-size="54" font-weight="700" letter-spacing="7" fill="#FFFFFF">COOKE</text>
+  <text x="280" y="151" font-family="Aptos, Helvetica, Arial, sans-serif" font-size="20" font-weight="600" letter-spacing="6" fill="#D6DEE2">AUTOMATION SYSTEMS</text>
+  <line x1="280" y1="174" x2="1085" y2="174" stroke="#35505F" stroke-width="1"/>
+  <text x="280" y="210" font-family="Aptos, Helvetica, Arial, sans-serif" font-size="16" letter-spacing="2.6" fill="#B79A62">PRACTICAL SOFTWARE. PROPERLY ENGINEERED.</text>
 </svg>
