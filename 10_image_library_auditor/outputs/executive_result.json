@@ -1,0 +1,95 @@
+{
+  "headline": "Your image library has a clean audit plan",
+  "summary": "Catalogued 2 visual assets and prepared consistent names without changing the originals.",
+  "metrics": [
+    {
+      "label": "IMAGES",
+      "value": "2",
+      "note": "catalogued"
+    },
+    {
+      "label": "LIBRARY SIZE",
+      "value": "827 B",
+      "note": "scanned"
+    },
+    {
+      "label": "DUPLICATES",
+      "value": "0",
+      "note": "content matches"
+    },
+    {
+      "label": "RENAMED",
+      "value": "0",
+      "note": "preview only"
+    }
+  ],
+  "rows": [
+    {
+      "current_name": "brand_mark.svg",
+      "suggested_name": "image_002.svg",
+      "bytes": 340,
+      "sha256": "ac400b22d7dbba3d33b2e85d9695d91ebb63c374c7d3346755e03fd4252c6115",
+      "size": "340 B",
+      "integrity": "ac400b22d7dbba3d\u2026"
+    },
+    {
+      "current_name": "report_cover.svg",
+      "suggested_name": "image_003.svg",
+      "bytes": 487,
+      "sha256": "3b0f855711d7bb4916dcf888bcd23429d500ab1a3049e482c8246d7ffca1f532",
+      "size": "487 B",
+      "integrity": "3b0f855711d7bb49\u2026"
+    }
+  ],
+  "columns": [
+    {
+      "key": "current_name",
+      "label": "Current name"
+    },
+    {
+      "key": "suggested_name",
+      "label": "Suggested name"
+    },
+    {
+      "key": "size",
+      "label": "Size"
+    },
+    {
+      "key": "integrity",
+      "label": "Integrity"
+    }
+  ],
+  "insights": [
+    {
+      "title": "Rename preview only",
+      "body": "Suggested names are an auditable plan; this release does not rename automatically.",
+      "tone": "good"
+    },
+    {
+      "title": "Integrity evidence",
+      "body": "Every supported asset receives a SHA-256 fingerprint.",
+      "tone": "neutral"
+    },
+    {
+      "title": "Duplicate visibility",
+      "body": "Detected 0 repeated content item(s) by hash.",
+      "tone": "neutral"
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "CSV evidence",
+      "path": "outputs/executive_result.csv",
+      "description": "Reviewable result table"
+    },
+    {
+      "name": "Executive report",
+      "path": "outputs/executive_report.html",
+      "description": "Shareable local summary"
+    }
+  ],
+  "can_apply": false,
+  "product_id": "010",
+  "product_name": "Image Library Auditor",
+  "source": "sample_data/input"
+}

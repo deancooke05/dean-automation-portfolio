@@ -1,0 +1,109 @@
+{
+  "headline": "Purchasing priorities are clear",
+  "summary": "Calculated reorder points from demand, lead time and safety stock for 2 inventory items.",
+  "metrics": [
+    {
+      "label": "SKUS",
+      "value": "2",
+      "note": "reviewed"
+    },
+    {
+      "label": "REORDER NOW",
+      "value": "1",
+      "note": "below threshold"
+    },
+    {
+      "label": "UNITS TO BUY",
+      "value": "13",
+      "note": "recommended"
+    },
+    {
+      "label": "HEALTHY",
+      "value": "1",
+      "note": "no action"
+    }
+  ],
+  "rows": [
+    {
+      "sku": "CAL-01",
+      "stock": "12",
+      "daily_demand": "4",
+      "lead_days": "5",
+      "safety_stock": "5",
+      "reorder_point": 25.0,
+      "recommended_order": 13.0,
+      "status": "REORDER",
+      "coverage_days": 3.0
+    },
+    {
+      "sku": "CAL-02",
+      "stock": "80",
+      "daily_demand": "3",
+      "lead_days": "7",
+      "safety_stock": "10",
+      "reorder_point": 31.0,
+      "recommended_order": 0.0,
+      "status": "OK",
+      "coverage_days": 26.7
+    }
+  ],
+  "columns": [
+    {
+      "key": "sku",
+      "label": "SKU"
+    },
+    {
+      "key": "stock",
+      "label": "Stock"
+    },
+    {
+      "key": "coverage_days",
+      "label": "Days cover"
+    },
+    {
+      "key": "reorder_point",
+      "label": "Reorder point"
+    },
+    {
+      "key": "recommended_order",
+      "label": "Order quantity"
+    },
+    {
+      "key": "status",
+      "label": "Decision"
+    }
+  ],
+  "insights": [
+    {
+      "title": "Demand-led recommendation",
+      "body": "Orders are based on expected lead-time demand plus safety stock.",
+      "tone": "good"
+    },
+    {
+      "title": "Immediate action",
+      "body": "1 SKU(s) currently require a purchase decision.",
+      "tone": "warning"
+    },
+    {
+      "title": "Transparent formula",
+      "body": "Reorder point = daily demand \u00d7 lead days + safety stock.",
+      "tone": "neutral"
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "CSV evidence",
+      "path": "outputs/executive_result.csv",
+      "description": "Reviewable result table"
+    },
+    {
+      "name": "Executive report",
+      "path": "outputs/executive_report.html",
+      "description": "Shareable local summary"
+    }
+  ],
+  "can_apply": false,
+  "product_id": "015",
+  "product_name": "Inventory Reorder Planner",
+  "source": "sample_data/input.csv"
+}

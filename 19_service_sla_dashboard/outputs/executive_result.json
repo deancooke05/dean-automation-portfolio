@@ -1,0 +1,96 @@
+{
+  "headline": "Service performance is visible",
+  "summary": "Converted 3 ticket records into an executive SLA performance view.",
+  "metrics": [
+    {
+      "label": "SLA MET",
+      "value": "66.7%",
+      "note": "compliance"
+    },
+    {
+      "label": "TICKETS",
+      "value": "3",
+      "note": "reviewed"
+    },
+    {
+      "label": "AVERAGE",
+      "value": "5.2 h",
+      "note": "resolution"
+    },
+    {
+      "label": "BREACHES",
+      "value": "1",
+      "note": "needs review"
+    }
+  ],
+  "rows": [
+    {
+      "ticket": "T-001",
+      "resolution_hours": "2.5",
+      "sla_met": "yes",
+      "resolution_display": "2.5 h",
+      "status": "MET"
+    },
+    {
+      "ticket": "T-002",
+      "resolution_hours": "9",
+      "sla_met": "no",
+      "resolution_display": "9.0 h",
+      "status": "BREACHED"
+    },
+    {
+      "ticket": "T-003",
+      "resolution_hours": "4",
+      "sla_met": "yes",
+      "resolution_display": "4.0 h",
+      "status": "MET"
+    }
+  ],
+  "columns": [
+    {
+      "key": "ticket",
+      "label": "Ticket"
+    },
+    {
+      "key": "resolution_display",
+      "label": "Resolution"
+    },
+    {
+      "key": "status",
+      "label": "SLA status"
+    }
+  ],
+  "insights": [
+    {
+      "title": "Breach focus",
+      "body": "1 ticket(s) missed SLA and should be reviewed for cause.",
+      "tone": "warning"
+    },
+    {
+      "title": "Balanced measure",
+      "body": "Median resolution is 4.0 hours, reducing distortion from outliers.",
+      "tone": "neutral"
+    },
+    {
+      "title": "Executive-ready KPI",
+      "body": "Current compliance is 66.7% across the supplied period.",
+      "tone": "neutral"
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "CSV evidence",
+      "path": "outputs/executive_result.csv",
+      "description": "Reviewable result table"
+    },
+    {
+      "name": "Executive report",
+      "path": "outputs/executive_report.html",
+      "description": "Shareable local summary"
+    }
+  ],
+  "can_apply": false,
+  "product_id": "019",
+  "product_name": "Service SLA Dashboard",
+  "source": "sample_data/input.csv"
+}

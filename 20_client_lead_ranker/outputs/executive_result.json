@@ -1,0 +1,120 @@
+{
+  "headline": "The best leads are at the top",
+  "summary": "Ranked 3 enquiries using visible budget, urgency and fit rules.",
+  "metrics": [
+    {
+      "label": "PIPELINE",
+      "value": "\u00a34,100.00",
+      "note": "stated budgets"
+    },
+    {
+      "label": "LEADS",
+      "value": "3",
+      "note": "ranked"
+    },
+    {
+      "label": "HIGH PRIORITY",
+      "value": "2",
+      "note": "reply first"
+    },
+    {
+      "label": "TOP SCORE",
+      "value": "100",
+      "note": "out of 100"
+    }
+  ],
+  "rows": [
+    {
+      "client": "Aero North",
+      "budget": "2500",
+      "urgency": "high",
+      "fit": "strong",
+      "score": 100,
+      "priority": "High",
+      "rank": 1,
+      "budget_display": "\u00a32,500.00",
+      "next_action": "Reply today"
+    },
+    {
+      "client": "Maker Works",
+      "budget": "1200",
+      "urgency": "medium",
+      "fit": "excellent",
+      "score": 70,
+      "priority": "High",
+      "rank": 2,
+      "budget_display": "\u00a31,200.00",
+      "next_action": "Reply today"
+    },
+    {
+      "client": "Local Shop",
+      "budget": "400",
+      "urgency": "low",
+      "fit": "medium",
+      "score": 0,
+      "priority": "Low",
+      "rank": 3,
+      "budget_display": "\u00a3400.00",
+      "next_action": "Nurture"
+    }
+  ],
+  "columns": [
+    {
+      "key": "rank",
+      "label": "Rank"
+    },
+    {
+      "key": "client",
+      "label": "Client"
+    },
+    {
+      "key": "budget_display",
+      "label": "Budget"
+    },
+    {
+      "key": "priority",
+      "label": "Priority"
+    },
+    {
+      "key": "score",
+      "label": "Score"
+    },
+    {
+      "key": "next_action",
+      "label": "Next action"
+    }
+  ],
+  "insights": [
+    {
+      "title": "Speed where it matters",
+      "body": "2 high-priority lead(s) deserve the fastest response.",
+      "tone": "good"
+    },
+    {
+      "title": "Explainable score",
+      "body": "Strong fit contributes 40 points; high urgency and sufficient budget contribute 30 each.",
+      "tone": "neutral"
+    },
+    {
+      "title": "Decision support, not autopilot",
+      "body": "A salesperson retains the final decision and relationship context.",
+      "tone": "neutral"
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "CSV evidence",
+      "path": "outputs/executive_result.csv",
+      "description": "Reviewable result table"
+    },
+    {
+      "name": "Executive report",
+      "path": "outputs/executive_report.html",
+      "description": "Shareable local summary"
+    }
+  ],
+  "can_apply": false,
+  "product_id": "020",
+  "product_name": "Client Lead Ranker",
+  "source": "sample_data/input.csv"
+}

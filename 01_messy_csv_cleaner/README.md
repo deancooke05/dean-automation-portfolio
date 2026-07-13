@@ -1,167 +1,101 @@
-# Messy CSV Cleaner
+# Product 001 — Messy CSV Cleaner
 
 ![Cooke Automation Systems](../brand/logo.svg)
 
-A simple Python tool that turns inconsistent CSV data into a cleaner, more usable file.
+**Turn unreliable customer data into a clean, dependable dataset.**
 
-## The Problem
+Customer and operational exports often contain blank rows, duplicate records, inconsistent names, mixed dates and badly formatted currency values.
 
-Business data often arrives with issues such as:
+Product 001 turns that work into a cleaned CSV, an evidence table, an executive HTML report and a machine-readable JSON result. The visual application is designed for first-time users, while the underlying engine and audit artifacts remain useful to technical reviewers and recruiters.
 
-- Duplicate records
-- Blank rows
-- Inconsistent capitalisation
-- Mixed date formats
-- Unnecessary currency symbols
-- Inconsistent email formatting
+![Guided product setup](screenshots/01_guided_setup.png)
 
-Cleaning this manually is repetitive, slow, and easy to get wrong.
+## Try it in under a minute
 
----
+From this product folder:
 
-## The Solution
-
-This script reads a messy customer CSV file, applies a set of cleaning rules, and exports:
-
-- A cleaned CSV file
-- A summary report
-- Consistent names, emails, dates and spending values
-
----
-
-## Example Transformation
-
-### Before
-
-```csv
-customer_id,name,email,date_joined,total_spend
-1001," john smith "," JOHN@MAIL.COM ","01/02/2024","£100"
-1002,"jane doe","jane@mail.com","02-02-2024","£200"
-1003,"BOB JOHNSON","bob@mail.com","2024-02-03","150"
-,,,,
-1002,"Jane Doe","JANE@MAIL.COM","02/02/24","£200"
+```bash
+python3 app.py
 ```
 
-### After
+The application opens automatically in your browser. It runs on `127.0.0.1`, processes the supplied input locally and starts with the included synthetic demonstration data.
 
-```csv
-customer_id,name,email,date_joined,total_spend
-1001,John Smith,john@mail.com,2024-02-01,100
-1002,Jane Doe,jane@mail.com,2024-02-02,200
-1003,Bob Johnson,bob@mail.com,2024-02-03,150
-```
+1. Leave the demo path selected or choose your own authorised input.
+2. Click **Build executive analysis**.
+3. Review the KPIs, interpretation and evidence table.
+4. Open the generated executive report or inspect the CSV/JSON artifacts.
 
----
+![Executive product result](screenshots/02_executive_result.png)
 
-## Cleaning Rules
+## What the customer receives
 
-The current version:
+- A guided Cooke Automation Systems interface
+- Four executive KPI cards
+- Plain-language interpretation of the result
+- A detailed evidence table
+- `outputs/executive_result.json` for systems and automation
+- `outputs/executive_result.csv` for Excel and manual review
+- `outputs/executive_report.html` for customers, managers and stakeholders
 
-- Removes fully blank rows
-- Removes duplicate customer records
-- Trims extra spaces
-- Converts names to Title Case
-- Converts emails to lowercase
-- Standardises common date formats to `YYYY-MM-DD`
-- Removes the `£` symbol from spending values
+## Product capabilities
 
----
+- Whitespace, name, email, date and currency normalisation
+- Blank-row and business-key duplicate removal
+- Original source preservation
+- Before/after evidence suitable for an import review
 
-## Project Structure
+## Why it is safe and understandable
 
-```text
-01_messy_csv_cleaner/
-├── clean_csv.py
-├── README.md
-├── sample_data/
-│   └── messy_customers.csv
-└── outputs/
-    ├── clean_customers.csv
-    └── cleaning_summary.txt
-```
----
+- The input path and purpose are visible before processing.
+- Customer data stays on the local computer.
+- The source input is preserved unless the interface explicitly presents an approval action.
+- Calculations are supported by a visible evidence table rather than a hidden score alone.
+- Synthetic sample data makes the complete workflow testable without exposing private information.
 
-## Screenshots
+## Command-line workflow
 
-### Original Data
-
-The example CSV contains deliberately inconsistent formatting, duplicate records and blank rows.
-
-<img src="screenshots/01_before.png" width="900">
-
----
-
-### Cleaned Output
-
-After processing, duplicate records are removed, names and email addresses are normalised, dates are converted to ISO format and blank rows are removed.
-
-<img src="screenshots/02_after.png" width="900">
-
----
-
-### Automated Tests
-
-Every core cleaning function is covered by automated unit tests.
-
-<img src="screenshots/03_tests.png" width="900">
-
----
-
-## How to Run
-
-From this project folder:
+The existing command-line entry point remains available for repeatable or scheduled work:
 
 ```bash
 python3 clean_csv.py
 ```
 
-The results will automatically be created inside the `outputs` folder.
+The visual `app.py` workflow is recommended for customers and demonstrations. The command-line workflow is useful for developers, automation and batch processing.
+
+## Engineering overview
+
+```text
+Guided local interface
+        ↓
+Product-specific analysis service
+        ↓
+Cooke Automation Systems calculation engine
+        ↓
+JSON + CSV + HTML evidence artifacts
+```
+
+The interface uses a standard-library local HTTP server and shared design system. Product behaviour remains product-specific: inputs are validated, calculations are transparent and outputs are generated from real engine results rather than static mock data.
+
+## Verification
+
+```bash
+(cd .. && python3 -m unittest discover -s tests -v)
+```
+
+The portfolio verification suite runs every product against its included sample input and checks that the application returns metrics, evidence rows and real output artifacts. Product-specific engines retain their own additional tests where present.
+
+## Project map
+
+```text
+01_messy_csv_cleaner/
+├── app.py          # Guided local application
+├── clean_csv.py    # Command-line cleaning workflow
+├── sample_data/    # Synthetic demonstration input
+├── outputs/        # Generated evidence and deliverables
+├── screenshots/    # Genuine interface screenshots
+└── README.md       # Customer and engineering guide
+```
 
 ---
 
-## Verified Example Result
-
-The included sample run produced:
-
-- 6 input rows
-- 4 cleaned output rows
-- 1 blank row removed
-- 1 duplicate row removed
-
----
-
-## Business Use Cases
-
-This tool could easily be adapted for:
-
-- Customer databases
-- Sales records
-- Mailing lists
-- Order exports
-- CRM exports
-- Survey responses
-- Stock inventories
-- Administrative spreadsheets
-
----
-
-## Skills Demonstrated
-
-- Python
-- CSV processing
-- Data cleaning
-- Duplicate detection
-- Date normalisation
-- File generation
-- User-focused automation
-
----
-
-## Future Improvements
-
-- Support Excel (.xlsx) files
-- Validate email addresses
-- Detect missing required fields
-- Allow custom cleaning rules
-- Generate Excel summary reports
-- Add a drag-and-drop desktop interface
+**Cooke Automation Systems · Product 001 · Version 2.0.0**

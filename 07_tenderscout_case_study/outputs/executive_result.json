@@ -1,0 +1,110 @@
+{
+  "headline": "The strongest opportunities are ranked first",
+  "summary": "Scored 3 tenders against 5 capability signals and a \u00a31,000.00 value threshold.",
+  "metrics": [
+    {
+      "label": "OPPORTUNITIES",
+      "value": "3",
+      "note": "reviewed"
+    },
+    {
+      "label": "PRIORITY",
+      "value": "2",
+      "note": "strong matches"
+    },
+    {
+      "label": "TOP SCORE",
+      "value": "60",
+      "note": "out of 100"
+    },
+    {
+      "label": "KEYWORDS",
+      "value": "5",
+      "note": "fit signals"
+    }
+  ],
+  "rows": [
+    {
+      "title": "Automation support",
+      "description": "Python automation for reporting",
+      "value": "5000",
+      "matched_keywords": "automation, python",
+      "score": 60,
+      "value_display": "\u00a35,000.00",
+      "recommendation": "PRIORITY REVIEW"
+    },
+    {
+      "title": "Engineering dashboard",
+      "description": "Software dashboard for engineering team",
+      "value": "9000",
+      "matched_keywords": "engineering, software",
+      "score": 60,
+      "value_display": "\u00a39,000.00",
+      "recommendation": "PRIORITY REVIEW"
+    },
+    {
+      "title": "Office cleaning",
+      "description": "Weekly facilities contract",
+      "value": "12000",
+      "matched_keywords": "",
+      "score": 20,
+      "value_display": "\u00a312,000.00",
+      "recommendation": "REVIEW"
+    }
+  ],
+  "columns": [
+    {
+      "key": "title",
+      "label": "Opportunity"
+    },
+    {
+      "key": "value_display",
+      "label": "Value"
+    },
+    {
+      "key": "matched_keywords",
+      "label": "Matched capability"
+    },
+    {
+      "key": "score",
+      "label": "Score"
+    },
+    {
+      "key": "recommendation",
+      "label": "Recommendation"
+    }
+  ],
+  "insights": [
+    {
+      "title": "Human decision retained",
+      "body": "Scores prioritise reading; they never replace eligibility and bid/no-bid review.",
+      "tone": "good"
+    },
+    {
+      "title": "Explainable ranking",
+      "body": "Every score is supported by visible keyword matches and contract value.",
+      "tone": "neutral"
+    },
+    {
+      "title": "Reusable profile",
+      "body": "Current capability profile: automation, engineering, software, python, data.",
+      "tone": "neutral"
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "CSV evidence",
+      "path": "outputs/executive_result.csv",
+      "description": "Reviewable result table"
+    },
+    {
+      "name": "Executive report",
+      "path": "outputs/executive_report.html",
+      "description": "Shareable local summary"
+    }
+  ],
+  "can_apply": false,
+  "product_id": "007",
+  "product_name": "Tender Opportunity Scorer",
+  "source": "sample_data/input.csv"
+}

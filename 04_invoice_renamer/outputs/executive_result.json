@@ -1,0 +1,88 @@
+{
+  "headline": "A clean invoice library is ready for approval",
+  "summary": "Prepared 1 transparent rename actions. No invoice has been changed yet.",
+  "metrics": [
+    {
+      "label": "INVOICES",
+      "value": "1",
+      "note": "mapping rows"
+    },
+    {
+      "label": "READY",
+      "value": "1",
+      "note": "safe to rename"
+    },
+    {
+      "label": "MISSING",
+      "value": "0",
+      "note": "requires review"
+    },
+    {
+      "label": "COLLISIONS",
+      "value": "0",
+      "note": "blocked automatically"
+    }
+  ],
+  "rows": [
+    {
+      "current_name": "invoice1.pdf",
+      "proposed_name": "2026-07-01_Example_Supplies_INV_1001.pdf",
+      "supplier": "Example Supplies",
+      "invoice": "INV-1001",
+      "status": "Ready",
+      "source": "sample_data/files/invoice1.pdf",
+      "destination": "sample_data/files/2026-07-01_Example_Supplies_INV_1001.pdf"
+    }
+  ],
+  "columns": [
+    {
+      "key": "current_name",
+      "label": "Current file"
+    },
+    {
+      "key": "proposed_name",
+      "label": "Proposed name"
+    },
+    {
+      "key": "supplier",
+      "label": "Supplier"
+    },
+    {
+      "key": "status",
+      "label": "Safety status"
+    }
+  ],
+  "insights": [
+    {
+      "title": "Approval required",
+      "body": "The preview must be reviewed before any filename is changed.",
+      "tone": "good"
+    },
+    {
+      "title": "Searchable convention",
+      "body": "Every proposed name contains the invoice date, supplier and invoice number.",
+      "tone": "neutral"
+    },
+    {
+      "title": "Overwrite protection",
+      "body": "Existing target filenames are blocked rather than replaced.",
+      "tone": "neutral"
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "CSV evidence",
+      "path": "outputs/executive_result.csv",
+      "description": "Reviewable result table"
+    },
+    {
+      "name": "Executive report",
+      "path": "outputs/executive_report.html",
+      "description": "Shareable local summary"
+    }
+  ],
+  "can_apply": true,
+  "product_id": "004",
+  "product_name": "Invoice Renamer",
+  "source": "sample_data/input.csv"
+}

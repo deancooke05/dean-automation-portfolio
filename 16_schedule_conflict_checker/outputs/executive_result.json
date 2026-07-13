@@ -1,0 +1,82 @@
+{
+  "headline": "Schedule risk has been isolated",
+  "summary": "Compared 3 events and found 1 overlapping commitment pair(s).",
+  "metrics": [
+    {
+      "label": "EVENTS",
+      "value": "3",
+      "note": "checked"
+    },
+    {
+      "label": "CONFLICTS",
+      "value": "1",
+      "note": "overlaps"
+    },
+    {
+      "label": "OVERLAP",
+      "value": "30 min",
+      "note": "total conflict time"
+    },
+    {
+      "label": "CLEAR",
+      "value": "1",
+      "note": "unaffected events"
+    }
+  ],
+  "rows": [
+    {
+      "event_a": "Client call",
+      "event_b": "Project review",
+      "overlap_start": "2026-07-12T10:30",
+      "overlap_end": "2026-07-12T11:00",
+      "overlap": "2026-07-12T10:30 \u2192 2026-07-12T11:00"
+    }
+  ],
+  "columns": [
+    {
+      "key": "event_a",
+      "label": "First event"
+    },
+    {
+      "key": "event_b",
+      "label": "Conflicting event"
+    },
+    {
+      "key": "overlap",
+      "label": "Overlap window"
+    }
+  ],
+  "insights": [
+    {
+      "title": "Resolve before booking",
+      "body": "1 conflict pair(s) need an owner decision.",
+      "tone": "warning"
+    },
+    {
+      "title": "Exact overlap windows",
+      "body": "The report identifies the shared time, not merely events on the same day.",
+      "tone": "neutral"
+    },
+    {
+      "title": "No calendar write access",
+      "body": "This version audits an authorised export and changes no calendar events.",
+      "tone": "neutral"
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "CSV evidence",
+      "path": "outputs/executive_result.csv",
+      "description": "Reviewable result table"
+    },
+    {
+      "name": "Executive report",
+      "path": "outputs/executive_report.html",
+      "description": "Shareable local summary"
+    }
+  ],
+  "can_apply": false,
+  "product_id": "016",
+  "product_name": "Schedule Conflict Checker",
+  "source": "sample_data/input.csv"
+}

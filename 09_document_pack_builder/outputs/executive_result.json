@@ -1,0 +1,90 @@
+{
+  "headline": "Your review pack is assembled",
+  "summary": "Combined 1 source documents into one ordered pack with clear section boundaries.",
+  "metrics": [
+    {
+      "label": "DOCUMENTS",
+      "value": "1",
+      "note": "combined"
+    },
+    {
+      "label": "WORDS",
+      "value": "5",
+      "note": "in final pack"
+    },
+    {
+      "label": "CHARACTERS",
+      "value": "170",
+      "note": "preserved"
+    },
+    {
+      "label": "SOURCE CHANGES",
+      "value": "0",
+      "note": "originals untouched"
+    }
+  ],
+  "rows": [
+    {
+      "order": 1,
+      "document": "brief.txt",
+      "words": 2,
+      "characters": 14
+    }
+  ],
+  "columns": [
+    {
+      "key": "order",
+      "label": "Order"
+    },
+    {
+      "key": "document",
+      "label": "Document"
+    },
+    {
+      "key": "words",
+      "label": "Words"
+    },
+    {
+      "key": "characters",
+      "label": "Characters"
+    }
+  ],
+  "insights": [
+    {
+      "title": "Traceable structure",
+      "body": "Each section retains its original filename as a visible heading.",
+      "tone": "good"
+    },
+    {
+      "title": "Originals preserved",
+      "body": "The pack is a new output; input notes are never modified.",
+      "tone": "neutral"
+    },
+    {
+      "title": "Ready for extension",
+      "body": "The service layer can later add PDF and DOCX rendering without changing the ordering logic.",
+      "tone": "neutral"
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "Structured review pack",
+      "path": "outputs/review_pack.txt",
+      "description": "Combined plain-text delivery"
+    },
+    {
+      "name": "CSV evidence",
+      "path": "outputs/executive_result.csv",
+      "description": "Reviewable result table"
+    },
+    {
+      "name": "Executive report",
+      "path": "outputs/executive_report.html",
+      "description": "Shareable local summary"
+    }
+  ],
+  "can_apply": false,
+  "product_id": "009",
+  "product_name": "Document Pack Builder",
+  "source": "sample_data/input"
+}

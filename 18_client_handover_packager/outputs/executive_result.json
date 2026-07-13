@@ -1,0 +1,85 @@
+{
+  "headline": "Your client handover is sealed and verified",
+  "summary": "Validated required files, packaged 1 items and fingerprinted the final delivery archive.",
+  "metrics": [
+    {
+      "label": "FILES",
+      "value": "1",
+      "note": "packaged"
+    },
+    {
+      "label": "ARCHIVE",
+      "value": "401 B",
+      "note": "delivery size"
+    },
+    {
+      "label": "CHECKSUM",
+      "value": "a3ca4f1f9d9a\u2026",
+      "note": "archive identity"
+    },
+    {
+      "label": "VALIDATION",
+      "value": "PASSED",
+      "note": "README present"
+    }
+  ],
+  "rows": [
+    {
+      "path": "README.md",
+      "size": "52 B",
+      "sha256": "731e837ffaa7016d\u2026"
+    }
+  ],
+  "columns": [
+    {
+      "key": "path",
+      "label": "Delivered file"
+    },
+    {
+      "key": "size",
+      "label": "Size"
+    },
+    {
+      "key": "sha256",
+      "label": "Integrity"
+    }
+  ],
+  "insights": [
+    {
+      "title": "Delivery gate passed",
+      "body": "Required handover documentation was present before packaging.",
+      "tone": "good"
+    },
+    {
+      "title": "Tamper evidence",
+      "body": "The final ZIP and every source file have cryptographic fingerprints.",
+      "tone": "neutral"
+    },
+    {
+      "title": "Professional handoff",
+      "body": "One archive reduces missing-file risk and simplifies customer receipt.",
+      "tone": "neutral"
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "Client handover ZIP",
+      "path": "outputs/client_handover.zip",
+      "description": "Validated delivery archive"
+    },
+    {
+      "name": "CSV evidence",
+      "path": "outputs/executive_result.csv",
+      "description": "Reviewable result table"
+    },
+    {
+      "name": "Executive report",
+      "path": "outputs/executive_report.html",
+      "description": "Shareable local summary"
+    }
+  ],
+  "can_apply": false,
+  "product_id": "018",
+  "product_name": "Client Handover Packager",
+  "source": "sample_data/input"
+}

@@ -1,0 +1,4 @@
+ticket,resolution_hours,sla_met,resolution_display,status
+T-001,2.5,yes,2.5 h,MET
+T-002,9,no,9.0 h,BREACHED
+T-003,4,yes,4.0 h,MET

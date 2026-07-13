@@ -1,0 +1,2 @@
+current_name,proposed_name,supplier,invoice,status,source,destination
+invoice1.pdf,2026-07-01_Example_Supplies_INV_1001.pdf,Example Supplies,INV-1001,Ready,sample_data/files/invoice1.pdf,sample_data/files/2026-07-01_Example_Supplies_INV_1001.pdf

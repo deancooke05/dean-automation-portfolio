@@ -22,7 +22,7 @@ def write_csv(path: str | Path, rows: list[dict], fields: list[str] | None = Non
     destination.parent.mkdir(parents=True, exist_ok=True)
     fields = fields or (list(rows[0]) if rows else [])
     with destination.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
     return destination
@@ -130,7 +130,7 @@ def merge_text_documents(inputs: list[str | Path], output: str | Path) -> Path:
 
 
 def image_manifest(folder: str | Path) -> list[dict]:
-    extensions = {".png", ".jpg", ".jpeg", ".gif", ".webp", ".tiff", ".bmp"}
+    extensions = {".png", ".jpg", ".jpeg", ".gif", ".webp", ".tiff", ".bmp", ".svg"}
     rows = []
     for index, item in enumerate(sorted(Path(folder).iterdir()), 1):
         if item.is_file() and item.suffix.lower() in extensions:
@@ -147,7 +147,9 @@ def analyse_log(path: str | Path) -> dict:
     for line in lines:
         match = pattern.search(line)
         if match:
-            severity = match.group(1).upper().replace("WARN", "WARNING")
+            severity = match.group(1).upper()
+            if severity == "WARN":
+                severity = "WARNING"
             severities[severity] += 1
             messages[match.group(2).strip()] += 1
     return {"lines": len(lines), "severities": dict(severities), "top_messages": messages.most_common(10)}

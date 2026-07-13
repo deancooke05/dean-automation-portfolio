@@ -1,0 +1,74 @@
+{
+  "headline": "A cryptographic change record is ready",
+  "summary": "Compared the current folder against the previous local baseline and recorded every added, changed or removed file.",
+  "metrics": [
+    {
+      "label": "FILES",
+      "value": "2",
+      "note": "current snapshot"
+    },
+    {
+      "label": "ADDED",
+      "value": "0",
+      "note": "since baseline"
+    },
+    {
+      "label": "CHANGED",
+      "value": "0",
+      "note": "content differs"
+    },
+    {
+      "label": "REMOVED",
+      "value": "0",
+      "note": "no longer present"
+    }
+  ],
+  "rows": [],
+  "columns": [
+    {
+      "key": "path",
+      "label": "File"
+    },
+    {
+      "key": "change",
+      "label": "Change"
+    },
+    {
+      "key": "evidence",
+      "label": "Hash evidence"
+    }
+  ],
+  "insights": [
+    {
+      "title": "Baseline refreshed",
+      "body": "The current snapshot is now the reference point for the next run.",
+      "tone": "good"
+    },
+    {
+      "title": "Content-aware monitoring",
+      "body": "Changed status is driven by size and SHA-256, not timestamp alone.",
+      "tone": "neutral"
+    },
+    {
+      "title": "Local chain of evidence",
+      "body": "The baseline remains in the product output folder.",
+      "tone": "neutral"
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "Baseline snapshot",
+      "path": "outputs/baseline_snapshot.json",
+      "description": "Cryptographic folder state"
+    },
+    {
+      "name": "Executive report",
+      "path": "outputs/executive_report.html",
+      "description": "Shareable local summary"
+    }
+  ],
+  "can_apply": false,
+  "product_id": "017",
+  "product_name": "Folder Change Monitor",
+  "source": "sample_data/input"
+}

@@ -1,0 +1,91 @@
+{
+  "headline": "Duplicate content has been isolated",
+  "summary": "Used file size and SHA-256 evidence to find 1 exact duplicate groups without deleting anything.",
+  "metrics": [
+    {
+      "label": "GROUPS",
+      "value": "1",
+      "note": "exact matches"
+    },
+    {
+      "label": "EXTRA COPIES",
+      "value": "1",
+      "note": "review candidates"
+    },
+    {
+      "label": "RECLAIMABLE",
+      "value": "52 B",
+      "note": "potential saving"
+    },
+    {
+      "label": "DELETIONS",
+      "value": "0",
+      "note": "always manual"
+    }
+  ],
+  "rows": [
+    {
+      "group": "Duplicate group 1",
+      "copies": 2,
+      "size_each": "52 B",
+      "potential_saving": "52 B",
+      "files": "copy_of_readme.md \u00b7 README.md",
+      "sha256": "731e837ffaa7016d\u2026"
+    }
+  ],
+  "columns": [
+    {
+      "key": "group",
+      "label": "Group"
+    },
+    {
+      "key": "copies",
+      "label": "Copies"
+    },
+    {
+      "key": "size_each",
+      "label": "Each"
+    },
+    {
+      "key": "potential_saving",
+      "label": "Potential saving"
+    },
+    {
+      "key": "files",
+      "label": "Files"
+    }
+  ],
+  "insights": [
+    {
+      "title": "Evidence, not guesses",
+      "body": "Files are grouped only when their cryptographic content hash matches.",
+      "tone": "good"
+    },
+    {
+      "title": "Zero automatic deletion",
+      "body": "The product identifies candidates but leaves final retention decisions to the owner.",
+      "tone": "neutral"
+    },
+    {
+      "title": "Efficient scan",
+      "body": "File size is used with SHA-256 to provide reliable duplicate evidence.",
+      "tone": "neutral"
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "CSV evidence",
+      "path": "outputs/executive_result.csv",
+      "description": "Reviewable result table"
+    },
+    {
+      "name": "Executive report",
+      "path": "outputs/executive_report.html",
+      "description": "Shareable local summary"
+    }
+  ],
+  "can_apply": false,
+  "product_id": "008",
+  "product_name": "Duplicate File Finder",
+  "source": "sample_data/input"
+}

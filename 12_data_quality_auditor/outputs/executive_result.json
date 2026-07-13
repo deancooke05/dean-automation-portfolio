@@ -1,0 +1,97 @@
+{
+  "headline": "Your dataset has a measurable quality baseline",
+  "summary": "Audited 3 rows across 3 fields and converted hidden weaknesses into an action list.",
+  "metrics": [
+    {
+      "label": "QUALITY SCORE",
+      "value": "67/100",
+      "note": "current baseline"
+    },
+    {
+      "label": "ROWS",
+      "value": "3",
+      "note": "audited"
+    },
+    {
+      "label": "MISSING",
+      "value": "2",
+      "note": "empty values"
+    },
+    {
+      "label": "DUPLICATES",
+      "value": "1",
+      "note": "repeated rows"
+    }
+  ],
+  "rows": [
+    {
+      "field": "id",
+      "missing": 0,
+      "completeness": "100.0%",
+      "status": "GOOD"
+    },
+    {
+      "field": "name",
+      "missing": 2,
+      "completeness": "33.3%",
+      "status": "REVIEW"
+    },
+    {
+      "field": "email",
+      "missing": 0,
+      "completeness": "100.0%",
+      "status": "GOOD"
+    }
+  ],
+  "columns": [
+    {
+      "key": "field",
+      "label": "Field"
+    },
+    {
+      "key": "missing",
+      "label": "Missing"
+    },
+    {
+      "key": "completeness",
+      "label": "Completeness"
+    },
+    {
+      "key": "status",
+      "label": "Status"
+    }
+  ],
+  "insights": [
+    {
+      "title": "Start with the weakest field",
+      "body": "name",
+      "tone": "warning"
+    },
+    {
+      "title": "No silent repair",
+      "body": "This auditor measures problems without guessing replacement values.",
+      "tone": "neutral"
+    },
+    {
+      "title": "Repeatable KPI",
+      "body": "Use 67/100 as the baseline for the next cleanup cycle.",
+      "tone": "neutral"
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "CSV evidence",
+      "path": "outputs/executive_result.csv",
+      "description": "Reviewable result table"
+    },
+    {
+      "name": "Executive report",
+      "path": "outputs/executive_report.html",
+      "description": "Shareable local summary"
+    }
+  ],
+  "can_apply": false,
+  "product_id": "012",
+  "product_name": "Data Quality Auditor",
+  "source": "sample_data/input.csv"
+}

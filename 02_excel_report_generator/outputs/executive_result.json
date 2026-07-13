@@ -1,0 +1,110 @@
+{
+  "headline": "Executive reporting, finished",
+  "summary": "Built a four-sheet Excel workbook from 30 orders with dashboard KPIs, charts, audit tables and source data.",
+  "metrics": [
+    {
+      "label": "REVENUE",
+      "value": "\u00a317,879.45",
+      "note": "total recorded"
+    },
+    {
+      "label": "ORDERS",
+      "value": "30",
+      "note": "included"
+    },
+    {
+      "label": "AVERAGE",
+      "value": "\u00a3595.98",
+      "note": "per order"
+    },
+    {
+      "label": "TOP PRODUCT",
+      "value": "Calibration Kit",
+      "note": "by revenue"
+    }
+  ],
+  "rows": [
+    {
+      "product": "Calibration Kit",
+      "revenue": "\u00a34,756.52",
+      "share": "26.6%"
+    },
+    {
+      "product": "Telemetry Unit",
+      "revenue": "\u00a34,263.79",
+      "share": "23.8%"
+    },
+    {
+      "product": "Pressure Module",
+      "revenue": "\u00a33,119.65",
+      "share": "17.4%"
+    },
+    {
+      "product": "Navigation System",
+      "revenue": "\u00a33,035.90",
+      "share": "17.0%"
+    },
+    {
+      "product": "Control Board",
+      "revenue": "\u00a31,754.66",
+      "share": "9.8%"
+    },
+    {
+      "product": "Flight Sensor",
+      "revenue": "\u00a3948.93",
+      "share": "5.3%"
+    }
+  ],
+  "columns": [
+    {
+      "key": "product",
+      "label": "Product"
+    },
+    {
+      "key": "revenue",
+      "label": "Revenue"
+    },
+    {
+      "key": "share",
+      "label": "Share"
+    }
+  ],
+  "insights": [
+    {
+      "title": "Presentation ready",
+      "body": "The workbook includes an Executive Summary designed for a meeting or client review.",
+      "tone": "good"
+    },
+    {
+      "title": "Fully auditable",
+      "body": "Analysis, raw data and report information remain available behind the dashboard.",
+      "tone": "neutral"
+    },
+    {
+      "title": "Refreshable workflow",
+      "body": "Replace the CSV and run the product again whenever a new reporting period closes.",
+      "tone": "neutral"
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "Executive workbook",
+      "path": "reports/Sales_Performance_Report.xlsx",
+      "description": "Four-sheet Excel report"
+    },
+    {
+      "name": "CSV evidence",
+      "path": "outputs/executive_result.csv",
+      "description": "Reviewable result table"
+    },
+    {
+      "name": "Executive report",
+      "path": "outputs/executive_report.html",
+      "description": "Shareable local summary"
+    }
+  ],
+  "can_apply": false,
+  "product_id": "002",
+  "product_name": "Excel Report Generator",
+  "source": "sample_data/sample_sales.csv"
+}

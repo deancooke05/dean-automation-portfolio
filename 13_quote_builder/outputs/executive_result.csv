@@ -1,0 +1,4 @@
+description,quantity,unit_price,line_total,unit_price_display,line_total_display
+Automation setup,1,450,450.0,£450.00,£450.00
+Data migration,3,85,255.0,£85.00,£255.00
+Documentation,2,45,90.0,£45.00,£90.00

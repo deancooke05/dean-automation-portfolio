@@ -1,0 +1,101 @@
+{
+  "headline": "Price movement is now visible",
+  "summary": "Analysed 4 recorded prices and isolated the changes that deserve attention.",
+  "metrics": [
+    {
+      "label": "PRODUCTS",
+      "value": "2",
+      "note": "tracked"
+    },
+    {
+      "label": "OBSERVATIONS",
+      "value": "4",
+      "note": "analysed"
+    },
+    {
+      "label": "LARGEST MOVE",
+      "value": "-10.0%",
+      "note": "Telemetry Unit"
+    },
+    {
+      "label": "LOWEST FOUND",
+      "value": "\u00a3250.00",
+      "note": "across history"
+    }
+  ],
+  "rows": [
+    {
+      "product": "Telemetry Unit",
+      "first_price": "\u00a3499.00",
+      "latest_price": "\u00a3449.00",
+      "change_percent": -10.02,
+      "lowest_price": "\u00a3449.00",
+      "change": "-10.0%",
+      "signal": "BUYING OPPORTUNITY"
+    },
+    {
+      "product": "Control Board",
+      "first_price": "\u00a3250.00",
+      "latest_price": "\u00a3265.00",
+      "change_percent": 6.0,
+      "lowest_price": "\u00a3250.00",
+      "change": "+6.0%",
+      "signal": "PRICE INCREASE"
+    }
+  ],
+  "columns": [
+    {
+      "key": "product",
+      "label": "Product"
+    },
+    {
+      "key": "first_price",
+      "label": "First"
+    },
+    {
+      "key": "latest_price",
+      "label": "Latest"
+    },
+    {
+      "key": "change",
+      "label": "Change"
+    },
+    {
+      "key": "signal",
+      "label": "Signal"
+    }
+  ],
+  "insights": [
+    {
+      "title": "Decision support",
+      "body": "Negative changes can indicate a buying window; positive changes can trigger supplier review.",
+      "tone": "good"
+    },
+    {
+      "title": "Offline by design",
+      "body": "This version analyses authorised exports and does not scrape retailer websites.",
+      "tone": "neutral"
+    },
+    {
+      "title": "Transparent evidence",
+      "body": "First, latest and lowest prices remain visible beside every signal.",
+      "tone": "neutral"
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "CSV evidence",
+      "path": "outputs/executive_result.csv",
+      "description": "Reviewable result table"
+    },
+    {
+      "name": "Executive report",
+      "path": "outputs/executive_report.html",
+      "description": "Shareable local summary"
+    }
+  ],
+  "can_apply": false,
+  "product_id": "006",
+  "product_name": "Price Tracker Analyser",
+  "source": "sample_data/input.csv"
+}

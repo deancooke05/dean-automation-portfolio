@@ -1,0 +1,90 @@
+{
+  "headline": "Operational noise has become a focused briefing",
+  "summary": "Reviewed 3 log lines and summarised severity plus recurring messages.",
+  "metrics": [
+    {
+      "label": "LOG LINES",
+      "value": "3",
+      "note": "reviewed"
+    },
+    {
+      "label": "ERROR EVENTS",
+      "value": "1",
+      "note": "needs attention"
+    },
+    {
+      "label": "WARNINGS",
+      "value": "1",
+      "note": "monitor"
+    },
+    {
+      "label": "SEVERITIES",
+      "value": "3",
+      "note": "observed"
+    }
+  ],
+  "rows": [
+    {
+      "severity": "INFO",
+      "events": 1,
+      "share": "33.3%"
+    },
+    {
+      "severity": "ERROR",
+      "events": 1,
+      "share": "33.3%"
+    },
+    {
+      "severity": "WARNING",
+      "events": 1,
+      "share": "33.3%"
+    }
+  ],
+  "columns": [
+    {
+      "key": "severity",
+      "label": "Severity"
+    },
+    {
+      "key": "events",
+      "label": "Events"
+    },
+    {
+      "key": "share",
+      "label": "Share"
+    }
+  ],
+  "insights": [
+    {
+      "title": "Immediate focus",
+      "body": "1 error or critical event(s) should be investigated first.",
+      "tone": "warning"
+    },
+    {
+      "title": "Recurring messages",
+      "body": "[('Started', 1), ('Connection failed', 1), ('Retrying', 1)]",
+      "tone": "neutral"
+    },
+    {
+      "title": "Local analysis",
+      "body": "Potentially sensitive logs never leave the computer.",
+      "tone": "neutral"
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "CSV evidence",
+      "path": "outputs/executive_result.csv",
+      "description": "Reviewable result table"
+    },
+    {
+      "name": "Executive report",
+      "path": "outputs/executive_report.html",
+      "description": "Shareable local summary"
+    }
+  ],
+  "can_apply": false,
+  "product_id": "011",
+  "product_name": "Log Insight Analyser",
+  "source": "sample_data/input.csv"
+}

@@ -1,0 +1,107 @@
+{
+  "headline": "Spending is categorised and explainable",
+  "summary": "Applied transparent keyword rules to 3 transactions and produced a category-level view.",
+  "metrics": [
+    {
+      "label": "TOTAL SPEND",
+      "value": "\u00a375.70",
+      "note": "reviewed"
+    },
+    {
+      "label": "TRANSACTIONS",
+      "value": "3",
+      "note": "categorised"
+    },
+    {
+      "label": "CATEGORIES",
+      "value": "3",
+      "note": "used"
+    },
+    {
+      "label": "TOP CATEGORY",
+      "value": "Travel",
+      "note": "\u00a342.50"
+    }
+  ],
+  "rows": [
+    {
+      "date": "2026-07-01",
+      "description": "GitHub subscription",
+      "amount": "15",
+      "category": "Software",
+      "amount_display": "\u00a315.00",
+      "share": "19.8%"
+    },
+    {
+      "date": "2026-07-02",
+      "description": "National Rail",
+      "amount": "42.50",
+      "category": "Travel",
+      "amount_display": "\u00a342.50",
+      "share": "56.1%"
+    },
+    {
+      "date": "2026-07-03",
+      "description": "Stationery supplies",
+      "amount": "18.20",
+      "category": "Office",
+      "amount_display": "\u00a318.20",
+      "share": "24.0%"
+    }
+  ],
+  "columns": [
+    {
+      "key": "date",
+      "label": "Date"
+    },
+    {
+      "key": "description",
+      "label": "Description"
+    },
+    {
+      "key": "amount_display",
+      "label": "Amount"
+    },
+    {
+      "key": "category",
+      "label": "Category"
+    },
+    {
+      "key": "share",
+      "label": "Share"
+    }
+  ],
+  "insights": [
+    {
+      "title": "Explainable rules",
+      "body": "Categories come from visible keywords rather than an opaque model.",
+      "tone": "good"
+    },
+    {
+      "title": "Review Other",
+      "body": "0.00 remains uncategorised and may justify a new rule.",
+      "tone": "neutral"
+    },
+    {
+      "title": "Finance-ready export",
+      "body": "The transaction table preserves source descriptions and adds the chosen category.",
+      "tone": "neutral"
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "CSV evidence",
+      "path": "outputs/executive_result.csv",
+      "description": "Reviewable result table"
+    },
+    {
+      "name": "Executive report",
+      "path": "outputs/executive_report.html",
+      "description": "Shareable local summary"
+    }
+  ],
+  "can_apply": false,
+  "product_id": "014",
+  "product_name": "Expense Categoriser",
+  "source": "sample_data/input.csv"
+}

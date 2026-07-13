@@ -1,0 +1,116 @@
+{
+  "headline": "Your data is clean, consistent and ready",
+  "summary": "Converted 6 source rows into 4 dependable records while preserving the original file.",
+  "metrics": [
+    {
+      "label": "INPUT ROWS",
+      "value": "6",
+      "note": "reviewed locally"
+    },
+    {
+      "label": "CLEAN ROWS",
+      "value": "4",
+      "note": "ready to use"
+    },
+    {
+      "label": "DUPLICATES",
+      "value": "1",
+      "note": "removed safely"
+    },
+    {
+      "label": "VALUES FIXED",
+      "value": "14",
+      "note": "standardised"
+    }
+  ],
+  "rows": [
+    {
+      "customer_id": "1001",
+      "name": "John Smith",
+      "email": "john@mail.com",
+      "date_joined": "2024-02-01",
+      "total_spend": "100"
+    },
+    {
+      "customer_id": "1002",
+      "name": "Jane Doe",
+      "email": "jane@mail.com",
+      "date_joined": "2024-02-02",
+      "total_spend": "200"
+    },
+    {
+      "customer_id": "1003",
+      "name": "Bob Johnson",
+      "email": "bob@mail.com",
+      "date_joined": "2024-02-03",
+      "total_spend": "150"
+    },
+    {
+      "customer_id": "1004",
+      "name": "Alice Brown",
+      "email": "alice@mail.com",
+      "date_joined": "2024-02-04",
+      "total_spend": "150"
+    }
+  ],
+  "columns": [
+    {
+      "key": "customer_id",
+      "label": "Customer Id"
+    },
+    {
+      "key": "name",
+      "label": "Name"
+    },
+    {
+      "key": "email",
+      "label": "Email"
+    },
+    {
+      "key": "date_joined",
+      "label": "Date Joined"
+    },
+    {
+      "key": "total_spend",
+      "label": "Total Spend"
+    }
+  ],
+  "insights": [
+    {
+      "title": "Original preserved",
+      "body": "The source CSV was never changed; the cleaned export was written as a new file.",
+      "tone": "good"
+    },
+    {
+      "title": "Rules applied",
+      "body": "Removed 1 blank rows, normalised names, emails, dates and currency-like values.",
+      "tone": "neutral"
+    },
+    {
+      "title": "Next step",
+      "body": "Open the clean CSV in Excel or use it as a safer import for another system.",
+      "tone": "neutral"
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "Clean CSV",
+      "path": "outputs/clean_data.csv",
+      "description": "Production-ready cleaned data"
+    },
+    {
+      "name": "CSV evidence",
+      "path": "outputs/executive_result.csv",
+      "description": "Reviewable result table"
+    },
+    {
+      "name": "Executive report",
+      "path": "outputs/executive_report.html",
+      "description": "Shareable local summary"
+    }
+  ],
+  "can_apply": false,
+  "product_id": "001",
+  "product_name": "Messy CSV Cleaner",
+  "source": "sample_data/messy_customers.csv"
+}

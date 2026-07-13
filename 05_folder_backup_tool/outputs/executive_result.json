@@ -1,0 +1,85 @@
+{
+  "headline": "A verified backup is ready",
+  "summary": "Created a compressed archive containing 1 files and embedded a SHA-256 integrity manifest.",
+  "metrics": [
+    {
+      "label": "FILES",
+      "value": "1",
+      "note": "archived"
+    },
+    {
+      "label": "SOURCE SIZE",
+      "value": "52 B",
+      "note": "before compression"
+    },
+    {
+      "label": "ARCHIVE SIZE",
+      "value": "401 B",
+      "note": "stored locally"
+    },
+    {
+      "label": "VERIFIED",
+      "value": "YES",
+      "note": "manifest checked"
+    }
+  ],
+  "rows": [
+    {
+      "path": "README.md",
+      "size": "52 B",
+      "sha256": "731e837ffaa7016d\u2026"
+    }
+  ],
+  "columns": [
+    {
+      "key": "path",
+      "label": "File"
+    },
+    {
+      "key": "size",
+      "label": "Size"
+    },
+    {
+      "key": "sha256",
+      "label": "SHA-256 fingerprint"
+    }
+  ],
+  "insights": [
+    {
+      "title": "Integrity built in",
+      "body": "Every archived file has a cryptographic fingerprint stored inside the ZIP.",
+      "tone": "good"
+    },
+    {
+      "title": "Source untouched",
+      "body": "Creating the backup does not move, rename or delete the original folder.",
+      "tone": "neutral"
+    },
+    {
+      "title": "Recovery evidence",
+      "body": "The embedded manifest makes later verification possible.",
+      "tone": "neutral"
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "Verified ZIP backup",
+      "path": "outputs/verified_backup.zip",
+      "description": "Compressed archive with embedded manifest"
+    },
+    {
+      "name": "CSV evidence",
+      "path": "outputs/executive_result.csv",
+      "description": "Reviewable result table"
+    },
+    {
+      "name": "Executive report",
+      "path": "outputs/executive_report.html",
+      "description": "Shareable local summary"
+    }
+  ],
+  "can_apply": false,
+  "product_id": "005",
+  "product_name": "Versioned Backup Tool",
+  "source": "sample_data/input"
+}

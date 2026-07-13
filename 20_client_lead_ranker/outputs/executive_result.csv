@@ -1,0 +1,4 @@
+client,budget,urgency,fit,score,priority,rank,budget_display,next_action
+Aero North,2500,high,strong,100,High,1,"£2,500.00",Reply today
+Maker Works,1200,medium,excellent,70,High,2,"£1,200.00",Reply today
+Local Shop,400,low,medium,0,Low,3,£400.00,Nurture
