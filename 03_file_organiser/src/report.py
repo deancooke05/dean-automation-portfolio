@@ -28,7 +28,7 @@ def build_html_report(plan: OrganisationPlan, path: Path) -> Path:
 <title>Smart File Organiser Report</title><style>
 :root{{--navy:#142b3a;--gold:#b79a62;--pearl:#f8fafb;--steel:#50697a;--line:#d8e0e5}}
 *{{box-sizing:border-box}}body{{margin:0;background:#eef2f4;color:#1b2730;font:15px Aptos,Inter,Arial,sans-serif}}
-.hero{{background:var(--navy);color:white;padding:54px 7vw 46px}}.brand{{color:var(--gold);font-weight:700;letter-spacing:.16em}}
+.hero{{background:var(--navy);color:white;padding:54px 7vw 46px}}.brand{{display:flex;align-items:center;gap:13px;color:var(--gold)}}.brand svg{{width:42px;height:42px;flex:0 0 auto}}.brand b,.brand small{{display:block;letter-spacing:.16em}}.brand b{{font-size:12px;color:white}}.brand small{{font-size:8px;margin-top:4px;color:#c8d3da}}
 h1{{font-size:42px;margin:16px 0 8px;font-weight:600}}.subtitle{{color:#c8d3da;font-size:17px}}
 main{{max-width:1180px;margin:-22px auto 50px;padding:0 24px}}.cards{{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}}
 .card,.panel{{background:white;border:1px solid var(--line);border-radius:14px;padding:24px}}.label{{color:var(--steel);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}}
@@ -36,7 +36,7 @@ main{{max-width:1180px;margin:-22px auto 50px;padding:0 24px}}.cards{{display:gr
 h2{{font-size:18px;color:var(--navy);margin:0 0 18px}}table{{width:100%;border-collapse:collapse}}th{{background:var(--navy);color:white;text-align:left;padding:12px}}
 td{{padding:12px;border-bottom:1px solid var(--line)}}.status{{color:#2f6f55;font-weight:700}}footer{{color:var(--steel);text-align:right;margin-top:18px}}
 @media(max-width:800px){{.cards,.grid{{grid-template-columns:1fr 1fr}}}}@media(max-width:520px){{.cards,.grid{{grid-template-columns:1fr}}}}
-</style></head><body><header class='hero'><div class='brand'>COOKE AUTOMATION SYSTEMS</div><h1>Smart File Organiser</h1>
+</style></head><body><header class='hero'><div class='brand'><svg viewBox='0 0 64 64' aria-hidden='true'><path d='M32 3 61 32 32 61 3 32Z' fill='none' stroke='currentColor' stroke-width='2.4'/><path d='M41 20A16 16 0 1 0 41 44' fill='none' stroke='currentColor' stroke-width='3.4' stroke-linecap='round'/></svg><span><b>COOKE</b><small>AUTOMATION SYSTEMS</small></span></div><h1>Smart File Organiser</h1>
 <div class='subtitle'>Organisation plan • {escape(plan.mode.title())} mode • {escape(generated)}</div></header><main>
 <section class='cards'><div class='card'><div class='label'>Files reviewed</div><div class='value'>{len(plan.actions)}</div></div>
 <div class='card'><div class='label'>Data volume</div><div class='value'>{format_size(plan.total_bytes)}</div></div>

@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="240" height="160" viewBox="0 0 240 160">
-  <rect width="240" height="160" fill="#142b3a"/>
-  <path d="M120 35 170 80 120 125 70 80Z" fill="none" stroke="#b79a62" stroke-width="4"/>
-  <text x="120" y="87" text-anchor="middle" fill="#f7f9f9" font-family="Georgia" font-size="28">C</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="160" viewBox="0 0 240 160" role="img" aria-label="Cooke Automation Systems mark">
+  <rect width="240" height="160" fill="#142B3A"/>
+  <path d="M120 29 171 80 120 131 69 80Z" fill="none" stroke="#B79A62" stroke-width="4"/>
+  <path d="M138 57A29 29 0 1 0 138 103" fill="none" stroke="#B79A62" stroke-width="6" stroke-linecap="round"/>
 </svg>

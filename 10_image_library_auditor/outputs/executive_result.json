@@ -9,7 +9,7 @@
     },
     {
       "label": "LIBRARY SIZE",
-      "value": "827 B",
+      "value": "887 B",
       "note": "scanned"
     },
     {
@@ -27,10 +27,10 @@
     {
       "current_name": "brand_mark.svg",
       "suggested_name": "image_002.svg",
-      "bytes": 340,
-      "sha256": "ac400b22d7dbba3d33b2e85d9695d91ebb63c374c7d3346755e03fd4252c6115",
-      "size": "340 B",
-      "integrity": "ac400b22d7dbba3d\u2026"
+      "bytes": 400,
+      "sha256": "1db5a1ed1083ee77fba07e6fa9f9c75290139344f0dc7600cdfe448cfed82a2f",
+      "size": "400 B",
+      "integrity": "1db5a1ed1083ee77\u2026"
     },
     {
       "current_name": "report_cover.svg",

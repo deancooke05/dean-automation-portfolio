@@ -110,4 +110,4 @@ python3 -m unittest discover -s 01_messy_csv_cleaner/tests -v
 
 ---
 
-**Cooke Automation Systems · Engineering software with quiet confidence**
+**Cooke Automation Systems · Practical software. Properly engineered.**
