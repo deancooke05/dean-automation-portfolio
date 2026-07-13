@@ -1,0 +1,8 @@
+{
+  "categories": {
+    "Documents": [".pdf", ".docx", ".txt", ".md"],
+    "Data": [".csv", ".xlsx", ".json"],
+    "Images": [".jpg", ".jpeg", ".png", ".svg"],
+    "Source Code": [".py", ".js", ".ts", ".html", ".css"]
+  }
+}

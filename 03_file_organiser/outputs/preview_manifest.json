@@ -1,0 +1,80 @@
+{
+  "created_at": "2026-07-13T10:14:17+00:00",
+  "source_root": "/Users/deancooke/Desktop/Work/dean_automation_portfolio/03_file_organiser/sample_messy_folder",
+  "destination_root": "/Users/deancooke/Desktop/Work/dean_automation_portfolio/03_file_organiser/outputs/organised_files",
+  "mode": "copy",
+  "recursive": false,
+  "actions": [
+    {
+      "source": "/Users/deancooke/Desktop/Work/dean_automation_portfolio/03_file_organiser/sample_messy_folder/customers.csv",
+      "destination": "/Users/deancooke/Desktop/Work/dean_automation_portfolio/03_file_organiser/outputs/organised_files/Spreadsheets/customers.csv",
+      "category": "Spreadsheets",
+      "extension": ".csv",
+      "size_bytes": 6,
+      "sha256": "af2bdbe1aa9b6ec1e2ade1d694f41fc71a831d0268e9891562113d8a62add1bf",
+      "status": "planned",
+      "collision": false
+    },
+    {
+      "source": "/Users/deancooke/Desktop/Work/dean_automation_portfolio/03_file_organiser/sample_messy_folder/invoice.pdf",
+      "destination": "/Users/deancooke/Desktop/Work/dean_automation_portfolio/03_file_organiser/outputs/organised_files/Documents/invoice.pdf",
+      "category": "Documents",
+      "extension": ".pdf",
+      "size_bytes": 6,
+      "sha256": "af2bdbe1aa9b6ec1e2ade1d694f41fc71a831d0268e9891562113d8a62add1bf",
+      "status": "planned",
+      "collision": false
+    },
+    {
+      "source": "/Users/deancooke/Desktop/Work/dean_automation_portfolio/03_file_organiser/sample_messy_folder/notes.txt",
+      "destination": "/Users/deancooke/Desktop/Work/dean_automation_portfolio/03_file_organiser/outputs/organised_files/Documents/notes.txt",
+      "category": "Documents",
+      "extension": ".txt",
+      "size_bytes": 6,
+      "sha256": "af2bdbe1aa9b6ec1e2ade1d694f41fc71a831d0268e9891562113d8a62add1bf",
+      "status": "planned",
+      "collision": false
+    },
+    {
+      "source": "/Users/deancooke/Desktop/Work/dean_automation_portfolio/03_file_organiser/sample_messy_folder/photo.jpg",
+      "destination": "/Users/deancooke/Desktop/Work/dean_automation_portfolio/03_file_organiser/outputs/organised_files/Images/photo.jpg",
+      "category": "Images",
+      "extension": ".jpg",
+      "size_bytes": 6,
+      "sha256": "af2bdbe1aa9b6ec1e2ade1d694f41fc71a831d0268e9891562113d8a62add1bf",
+      "status": "planned",
+      "collision": false
+    },
+    {
+      "source": "/Users/deancooke/Desktop/Work/dean_automation_portfolio/03_file_organiser/sample_messy_folder/random.bin",
+      "destination": "/Users/deancooke/Desktop/Work/dean_automation_portfolio/03_file_organiser/outputs/organised_files/Other/random.bin",
+      "category": "Other",
+      "extension": ".bin",
+      "size_bytes": 6,
+      "sha256": "af2bdbe1aa9b6ec1e2ade1d694f41fc71a831d0268e9891562113d8a62add1bf",
+      "status": "planned",
+      "collision": false
+    },
+    {
+      "source": "/Users/deancooke/Desktop/Work/dean_automation_portfolio/03_file_organiser/sample_messy_folder/script.py",
+      "destination": "/Users/deancooke/Desktop/Work/dean_automation_portfolio/03_file_organiser/outputs/organised_files/Code/script.py",
+      "category": "Code",
+      "extension": ".py",
+      "size_bytes": 6,
+      "sha256": "af2bdbe1aa9b6ec1e2ade1d694f41fc71a831d0268e9891562113d8a62add1bf",
+      "status": "planned",
+      "collision": false
+    }
+  ],
+  "summary": {
+    "files": 6,
+    "bytes": 36,
+    "categories": {
+      "Code": 1,
+      "Documents": 2,
+      "Images": 1,
+      "Other": 1,
+      "Spreadsheets": 1
+    }
+  }
+}

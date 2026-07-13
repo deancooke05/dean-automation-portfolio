@@ -125,6 +125,8 @@ def build():
     for number,(name,description,product) in PRODUCTS.items():
         folder=FOLDERS.get(number, f"{number:02d}_"+name.lower().replace(" ","_").replace("-",""))
         target=ROOT/folder; (target/"sample_data").mkdir(parents=True,exist_ok=True); (target/"outputs").mkdir(exist_ok=True)
+        if (target / ".product_complete").exists():
+            continue
         (target/"run.py").write_text(RUNNER.format(product=product,description=description),encoding="utf-8")
         (target/"README.md").write_text(README.format(number=number,name=name,description=description,folder=folder),encoding="utf-8")
         (target/"CHANGELOG.md").write_text(f"# Changelog\n\n## 1.0.0 — 12 July 2026\n\n- Initial verified portfolio release of {name}.\n",encoding="utf-8")
